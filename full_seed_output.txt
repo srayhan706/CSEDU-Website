@@ -1,0 +1,101 @@
+Connecting to database csedu at localhost:5432 as postgres
+Database connection established successfully.
+
+=== CSEDU Website Database Seeding ===
+
+Starting master seed script...
+
+Clearing existing data...
+Fetching database schema...
+Found 27 tables in the database.
+Cleared table: roles_permissions
+Table course_prerequisites does not exist, skipping.
+Table course_faculty does not exist, skipping.
+Table project_faculty does not exist, skipping.
+Table project_students does not exist, skipping.
+Cleared table: equipment_bookings
+Cleared table: lab_time_slots
+Cleared table: equipment
+Cleared table: labs
+Cleared table: announcements
+Cleared table: projects
+Cleared table: courses
+Cleared table: programs
+Cleared table: faculty
+Cleared table: users
+Cleared table: permissions
+Cleared table: roles
+
+Seeding roles and permissions...
+Added role: ADMIN with ID: 33
+Added role: FACULTY with ID: 34
+Added role: STUDENT with ID: 35
+Added role: STAFF with ID: 36
+Roles and permissions seeded successfully.
+
+Seeding users...
+Created admin user with ID: 128
+Created faculty user: Dr. Md. Shabbir Ahmed with ID: 129
+Created faculty user: Dr. Muhammad Masroor Ali with ID: 130
+Created faculty user: Dr. Md. Haider Ali with ID: 131
+Created faculty user: Dr. Kazi Muheymin-Us-Sakib with ID: 132
+Created faculty user: Dr. Md. Abdur Razzaque with ID: 133
+Created faculty user: Dr. Md. Mustafizur Rahman with ID: 134
+Created faculty user: Dr. Sarker Tanveer Ahmed Rumee with ID: 135
+Created faculty user: Dr. Md. Shariful Islam with ID: 136
+Created faculty user: Dr. Mosaddek Hossain Kamal Tushar with ID: 137
+Created faculty user: Dr. Md. Mamun-Or-Rashid with ID: 138
+Created student user: Student One with ID: 139
+Created student user: Student Two with ID: 140
+Created student user: Student Three with ID: 141
+Created student user: Student Four with ID: 142
+Created student user: Student Five with ID: 143
+Created staff user: Staff One with ID: 144
+Created staff user: Staff Two with ID: 145
+Users seeded successfully.
+
+Seeding faculty profiles...
+Created faculty profile for: Dr. Md. Shabbir Ahmed
+Created faculty profile for: Dr. Muhammad Masroor Ali
+Created faculty profile for: Dr. Md. Haider Ali
+Created faculty profile for: Dr. Kazi Muheymin-Us-Sakib
+Created faculty profile for: Dr. Md. Abdur Razzaque
+Created faculty profile for: Dr. Md. Mustafizur Rahman
+Created faculty profile for: Dr. Sarker Tanveer Ahmed Rumee
+Created faculty profile for: Dr. Md. Shariful Islam
+Created faculty profile for: Dr. Mosaddek Hossain Kamal Tushar
+Created faculty profile for: Dr. Md. Mamun-Or-Rashid
+Faculty profiles seeded successfully.
+
+Seeding courses...
+Created program: Bachelor of Science in Computer Science and Engineering with ID: 4
+Created program: Master of Science in Computer Science and Engineering with ID: 5
+Created program: Doctor of Philosophy in Computer Science and Engineering with ID: 6
+Created course: CSE101 - Introduction to Computer Science with ID: 27
+Created course: CSE102 - Programming Language I with ID: 28
+Created course: CSE201 - Data Structures with ID: 29
+Created course: CSE203 - Object-Oriented Programming with ID: 30
+Created course: CSE202 - Algorithms with ID: 31
+Created course: CSE301 - Database Systems with ID: 32
+Created course: CSE401 - Artificial Intelligence with ID: 33
+Created course: CSE402 - Computer Networks with ID: 34
+Created course: CSE501 - Advanced Database Systems with ID: 35
+Created course: CSE502 - Advanced Algorithms with ID: 36
+Created course: CSE601 - Advanced AI with ID: 37
+Created course: CSE602 - Research Methodology with ID: 38
+Courses seeded successfully.
+
+Seeding projects...
+Project faculty junction table does not exist. Creating table...
+Project faculty junction table created.
+Project students junction table does not exist. Creating table...
+Project students junction table created.
+
+Error during seeding: column "description" of relation "projects" does not exist
+LINE 2: ...          (title, type, category, year, abstract, descriptio...
+                                                             ^
+
+
+Seeding failed. Database has been rolled back.
+
+Database connection closed.

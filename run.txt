@@ -1,0 +1,8 @@
+.\venv\Scripts\Activate.ps1
+
+.\venv\Scripts\alembic.exe upgrade head
+.\venv\Scripts\uvicorn.exe main:app --reload
+
+alembic upgrade head
+
+
